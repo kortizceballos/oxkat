@@ -83,12 +83,12 @@ SLURM_ACCOUNT = '' # e.g. b09-mightee-ag, b24-thunderkat-ag
 SLURM_RESERVATION = '' # e.g. lsp-mightee
 
 SLURM_NODELIST = '' # Specify node(s) to use
-SLURM_EXCLUDE = 'highmem-003' # Specify node(s) to exclude
+SLURM_EXCLUDE = '' # Specify node(s) to exclude
 
 
 SLURM_DEFAULTS = {
 	'TIME': '12:00:00',
-	'PARTITION': 'Main',
+	'PARTITION': 'sapphire',
 	'NTASKS': '1',
 	'NODES': '1',
 	'CPUS': '8',
@@ -97,7 +97,7 @@ SLURM_DEFAULTS = {
 
 SLURM_TRICOLOUR = {
     'TIME': '06:00:00',
-    'PARTITION': 'Main',
+    'PARTITION': 'sapphire',
     'NTASKS': '1',
     'NODES': '1',
     'CPUS': '32',
@@ -106,7 +106,7 @@ SLURM_TRICOLOUR = {
 
 SLURM_WSCLEAN = {
     'TIME': '12:00:00',
-    'PARTITION': 'Main',
+    'PARTITION': 'sapphire',
     'NTASKS': '1',
     'NODES': '1',
     'CPUS': '32',
@@ -115,7 +115,7 @@ SLURM_WSCLEAN = {
 
 SLURM_EXTRALONG = {
     'TIME': '48:00:00',
-    'PARTITION': 'Main',
+    'PARTITION': 'sapphire',
     'NTASKS': '1',
     'NODES': '1',
     'CPUS': '32',

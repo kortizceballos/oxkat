@@ -186,7 +186,6 @@ def main():
             step['dependency'] = 1
             step['id'] = 'KILMS'+code
             step['slurm_config'] = cfg.SLURM_HIGHMEM
-            step['slurm_exclude'] = 'highmem-003' 
             step['pbs_config'] = cfg.PBS_WSCLEAN
             syscall = CONTAINER_RUNNER+KILLMS_CONTAINER+' ' if USE_SINGULARITY else ''
             syscall += gen.generate_syscall_killms(myms=myms,
